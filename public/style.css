@@ -7,11 +7,6 @@ body {
   padding: 50px;
 }
 
-body {
-  width: 1000px;
-  margin: 50px auto;
-}
-
 #board {
   height: 100px;
   width: 300px;
@@ -50,4 +45,24 @@ body {
 }
 #slot3 {
   left: 225px;
+}
+
+.piece {
+  height: 40px;
+  width: 40px;
+  margin: 5px;
+  border-radius: 20px;
+  display: none;
+}
+
+.blackpiece {
+  background: black;
+}
+
+.whitepiece {
+  background: #999;
+}
+
+.piece.on {
+  display: block;
 }
