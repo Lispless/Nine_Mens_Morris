@@ -35,7 +35,7 @@ body {
 .slot {
   height: 50px;
   width: 50px;
-  background: blue;
+  background: white;
   display: block;
   border-radius: 25px;
   position: absolute;
