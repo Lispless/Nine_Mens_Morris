@@ -1,0 +1,6 @@
+{
+  "name": "Nine_Mens_Morris",
+  "dependencies": {
+  "express": ">3.2.6"
+  }
+}
