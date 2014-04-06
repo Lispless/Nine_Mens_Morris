@@ -1,3 +1,12 @@
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  padding: 50px;
+}
+
 body {
   width: 1000px;
   margin: 50px auto;
@@ -34,11 +43,11 @@ body {
 }
 
 #slot1 {
-  left: 25;
+  left: 25px;
 }
 #slot2 {
-  left: 125;
+  left: 125px;
 }
 #slot3 {
-  left: 225;
+  left: 225px;
 }
