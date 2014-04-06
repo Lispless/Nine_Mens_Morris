@@ -4,11 +4,12 @@ body {
 }
 
 #board {
-  height: 500px;
-  width: 500px;
+  height: 100px;
+  width: 300px;
   display: block;
   margin: 100px auto;
   background: brown;
+  position: relative;
 }
 .checker {
   height: 40px;
@@ -20,4 +21,24 @@ body {
 
 .red {
   background: red !important;
+}
+
+.slot {
+  height: 50px;
+  width: 50px;
+  background: blue;
+  display: block;
+  border-radius: 25px;
+  position: absolute;
+  top: 25px;
+}
+
+#slot1 {
+  left: 25;
+}
+#slot2 {
+  left: 125;
+}
+#slot3 {
+  left: 225;
 }
