@@ -8,7 +8,7 @@ body {
 }
 
 #board {
-  height: 100px;
+  height: 300px;
   width: 300px;
   display: block;
   margin: 100px auto;
@@ -45,6 +45,32 @@ body {
 }
 #slot3 {
   left: 225px;
+}
+
+#slot4 {
+  left: 25px;
+  top: 125px;
+}
+#slot5 {
+  left: 125px;
+  top: 125px;
+}
+#slot6 {
+  left: 225px;
+  top: 125px;
+}
+
+#slot7 {
+  left: 25px;
+  top: 225;
+}
+#slot8 {
+  left: 125px;
+  top: 225;
+}
+#slot9 {
+  left: 225px;
+  top: 225;
 }
 
 .piece {
