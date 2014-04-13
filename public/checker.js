@@ -1,10 +1,26 @@
-var Checker = function() {
-  var color = color;
+var Checker = {};
 
-  this.changeColor = function(input) {
-    color = input;
+(function() {
+  var count = 0;
+
+  Checker = function(parent, color) {
+    this.color = color;
+
+    this.ontable = false;
+
+    this.slot;
+
+    this.movable = true;
+
+    this.id = count;
+    count++
+
+    this.element = $('<div class="checker"></div>');
+    parent.append(this.element);
+    this.element.attr('data-checkerId', this.id);
   }
-  this.getColor = function() {
-    return color;
-  }  
-}
+
+  Checker.prototype.getPosition = function () {
+    return this.element.position();
+  }
+}())

@@ -1,18 +1,30 @@
 $(document).ready(function() {
 
-  $(".checker").draggable({
-    start: function() {
+  var count = 9;
 
-    },
-    drag: function() {
+  var board = new Board($('#board'), count);
 
-    },
-    stop: function(e) {
-      console.log(e)
+  var checkers = [];
+
+    for (var i=0; i < count; i++) {
+      var c = new Checker($('#bank'), 'black')
+
+      checkers.push(c);
+
+      c.element.draggable({
+        start: function() {
+
+        },
+        drag: function() {
+
+        },
+        stop: function(e) {
+          console.log(e)
+        }
+      });
+
+
     }
-  });
-
-
 
 });
 
