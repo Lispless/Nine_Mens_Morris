@@ -1,14 +1,14 @@
 $(document).ready(function() {
 
-// $(".checker").on("click", function(test) {
-// $(this).toggleClass('red')
-// } )
+  $(".checker").draggable({
+    start: function() {
 
-// $(".checker").draggable({ snap: ".slot", snapMode: "Inner", snapTolerence: "5px" });
+    },
+    drag: function() {
 
-$(".slot").on("click", function() {
-  $(this).find(".blackpiece").toggleClass("on")
-})
-
- });
-
+    },
+    stop: function(e) {
+      console.log(e)
+    }
+  });
+});
